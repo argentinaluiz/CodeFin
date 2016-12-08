@@ -36,7 +36,7 @@ gulp.task('webpack-dev-server', () => {
     new WebpackDevServer(webpack(config), {
         hot: true,
         proxy:{
-          '*': 'http://localhost:8000'
+          '*': 'http://localhost:8000/'
         },
         watchOptions:{
             poll: true,
@@ -45,7 +45,6 @@ gulp.task('webpack-dev-server', () => {
         publicPath: config.output.publicPath,
         noInfo: true,
         stats: {colors: true}
-
     }).listen(8080, '127.0.0.1',() => {
         console.log("Bundling project...")
     });
