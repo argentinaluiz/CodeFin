@@ -30,13 +30,13 @@ gulp.task('webpack-dev-server', () => {
     let config = mergeWebpack(webpackConfig, webpackDevConfig);
     let inlineHot = [
         'webpack/hot/dev-server',
-        'webpack-dev-server/client?http://localhost:8080/'
+        'webpack-dev-server/client?http://127.0.0.1:8080'
     ];
     config.entry.admin = [config.entry.admin].concat(inlineHot);
     new WebpackDevServer(webpack(config), {
         hot: true,
         proxy:{
-          '*': 'http://localhost:8000/'
+          '*': 'http://127.0.0.1:8000'
         },
         watchOptions:{
             poll: true,
@@ -45,7 +45,8 @@ gulp.task('webpack-dev-server', () => {
         publicPath: config.output.publicPath,
         noInfo: true,
         stats: {colors: true}
-    }).listen(8080, '127.0.0.1',() => {
+    })
+        .listen(8080, '0.0.0.0',() => {
         console.log("Bundling project...")
     });
 });
@@ -58,6 +59,6 @@ elixir(mix => {
 
     mix.browserSync({
         host: '0.0.0.0',
-        proxy: 'http://localhost:8080/'
+        proxy: 'http://127.0.0.1:8080'
     });
 });

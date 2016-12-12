@@ -23,10 +23,11 @@
     19 => 'Illuminate\\Translation\\TranslationServiceProvider',
     20 => 'Illuminate\\Validation\\ValidationServiceProvider',
     21 => 'Illuminate\\View\\ViewServiceProvider',
-    22 => 'CodeFin\\Providers\\AppServiceProvider',
-    23 => 'CodeFin\\Providers\\AuthServiceProvider',
-    24 => 'CodeFin\\Providers\\EventServiceProvider',
-    25 => 'CodeFin\\Providers\\RouteServiceProvider',
+    22 => 'Tymon\\JWTAuth\\Providers\\LaravelServiceProvider',
+    23 => 'CodeFin\\Providers\\AppServiceProvider',
+    24 => 'CodeFin\\Providers\\AuthServiceProvider',
+    25 => 'CodeFin\\Providers\\EventServiceProvider',
+    26 => 'CodeFin\\Providers\\RouteServiceProvider',
   ),
   'eager' => 
   array (
@@ -40,10 +41,11 @@
     7 => 'Illuminate\\Pagination\\PaginationServiceProvider',
     8 => 'Illuminate\\Session\\SessionServiceProvider',
     9 => 'Illuminate\\View\\ViewServiceProvider',
-    10 => 'CodeFin\\Providers\\AppServiceProvider',
-    11 => 'CodeFin\\Providers\\AuthServiceProvider',
-    12 => 'CodeFin\\Providers\\EventServiceProvider',
-    13 => 'CodeFin\\Providers\\RouteServiceProvider',
+    10 => 'Tymon\\JWTAuth\\Providers\\LaravelServiceProvider',
+    11 => 'CodeFin\\Providers\\AppServiceProvider',
+    12 => 'CodeFin\\Providers\\AuthServiceProvider',
+    13 => 'CodeFin\\Providers\\EventServiceProvider',
+    14 => 'CodeFin\\Providers\\RouteServiceProvider',
   ),
   'deferred' => 
   array (
