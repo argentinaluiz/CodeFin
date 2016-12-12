@@ -23,7 +23,7 @@
                             <input id="password" type="password"
                                    class="validate {{ $messageError? 'invalid' : $messageError }}" name="password"
                                    value="{{ old('password') }}"
-                                   required autofocus>
+                                   required>
                             <label for="password" {!! $messageError !!}>Senha:</label>
                         </div>
                     </div>
