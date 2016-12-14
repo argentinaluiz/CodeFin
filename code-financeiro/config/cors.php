@@ -12,7 +12,7 @@ return [
      |
      */
     'supportsCredentials' => false,
-    'allowedOrigins' => ['http://127.0.0.1:3000'],
+    'allowedOrigins' => ['http://localhost:3000', 'chrome-extension://fdmmgilgnpjigdojojpjoooidkmcomcm' ],
     'allowedHeaders' => ['*'],
     'allowedMethods' => ['*'],
     'exposedHeaders' => [],

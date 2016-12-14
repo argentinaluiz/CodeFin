@@ -45,6 +45,7 @@ class AuthController extends Controller
 
     protected function sendLoginResponse(Request $request, $token)
     {
+		$this->clearLoginAttempts($request);
         return response()->json([
            'token' => $token
         ]);
@@ -69,16 +70,9 @@ class AuthController extends Controller
 
         return response()->json([
             'message' => Lang::get('auth.failed')
-        ], 401); //Unauthorized
+        ], 400);
     }
 
-
-    /**
-     * Log the user out of the application.
-     *
-     * @param \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function logout()
     {
         Auth::guard('api')->logout();
