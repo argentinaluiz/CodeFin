@@ -29,7 +29,7 @@ export default {
                     .catch(afterLogout());
 
     },
-    refresh_token(){
+    refreshToken(){
       return Jwt.refreshToken().then((response) => {
           LocalStorage.set(TOKEN, response.data.token);
           return response;

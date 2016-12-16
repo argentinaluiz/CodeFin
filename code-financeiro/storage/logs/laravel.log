@@ -1929,3 +1929,12 @@ Stack trace:
 #43 C:\wamp\www\Curso_Laravel\code-financeiro\public\index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #44 C:\wamp\www\Curso_Laravel\code-financeiro\server.php(21): require_once('C:\\wamp\\www\\Cur...')
 #45 {main}  
+[2016-12-16 00:50:07] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Tymon\JWTAuth\Providers\LaravelServiceProvider' not found' in C:\Users\Luiz\Documents\Code.education\Projetos alunos\laravel-vue\danielpessoa\code-financeiro\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php:146
+Stack trace:
+#0 {main}  
+[2016-12-16 00:51:54] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Tymon\JWTAuth\Providers\LaravelServiceProvider' not found' in C:\Users\Luiz\Documents\Code.education\Projetos alunos\laravel-vue\danielpessoa\code-financeiro\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php:146
+Stack trace:
+#0 {main}  
+[2016-12-16 00:52:56] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Barryvdh\Cors\ServiceProvider' not found' in C:\Users\Luiz\Documents\Code.education\Projetos alunos\laravel-vue\danielpessoa\code-financeiro\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php:146
+Stack trace:
+#0 {main}  
